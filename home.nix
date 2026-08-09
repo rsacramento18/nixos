@@ -20,6 +20,7 @@
 	    btw = "echo I use nixos, btw";
 	};
     };
+    home.file.".config/nvim".source = .config/nvim;
     home.packages = with pkgs; [
 	ghostty
 	neovim
