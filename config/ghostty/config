@@ -1,0 +1,15 @@
+font-codepoint-map = U+f101-U+f25c=nonicons
+
+font-family = Berkeley Mono
+font-family = nonicons
+font-size = 14
+
+theme = TokyoNight
+background = 14161B
+
+cursor-style = block
+window-decoration = true
+confirm-close-surface = false
+gtk-titlebar = true
+
+keybind = ctrl+b>r=reload_config
