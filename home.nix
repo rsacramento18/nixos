@@ -25,6 +25,12 @@ in
     less
     tmux
     ripgrep
+    rust-analyzer
+    rustfmt
+    clippy
+    lua-language-server
+    gopls
+    clang-tools
     nodejs
     rustc
     cargo

@@ -15,9 +15,6 @@ return {
         ensure_installed = {
           'ts_ls',
           'eslint',
-          'lua_ls',
-          'rust_analyzer',
-          -- 'gopls',
           'jsonls',
           'vue_ls',
         },
@@ -27,6 +24,11 @@ return {
       local vue_language_server_path = vim.fn.expand '$MASON/packages' ..
           '/vue-language-server' .. '/node_modules/@vue/language-server'
 
+      vim.lsp.enable("rust_analyzer")
+      vim.lsp.enable("lua_ls")   -- binary lua-language-server is on PATH
+      vim.lsp.enable("gopls")
+      vim.lsp.enable("clangd")
+      
       vim.lsp.config('ts_ls', {
         init_options = {
           plugins = {
